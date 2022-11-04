@@ -1,0 +1,29 @@
+.linkButton {
+    display: block;
+    width: 343px;
+    height: 68px;
+    margin: 24px auto;    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAECF0;
+    border-radius: 8px;
+    padding: 24px 32px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.linkButton:hover {
+    background-color: #D0D5DD;
+}
+
+@media (min-width: 640px){
+    .linkButton {
+        width: 1152px;
+        height: 76px;
+        font-size: 18px;
+        line-height: 28px
+    }
+}
+
+  
