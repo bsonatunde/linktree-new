@@ -16,10 +16,10 @@ const ContactForm = () => {
         };
             
         const handleSubmit =(e) => {
-              //  e.preventDefault();
+               e.preventDefault();
                setformErrors(validate(formValues));
                setisSubmit(true);
-               formValidation('')
+               setformValues(formValidation)
         };
 
         useEffect(() => {
@@ -84,10 +84,10 @@ const ContactForm = () => {
     You agree to providing your data to {name} who may contact you.</p>
     </div>
   
-  <button id="btn__submit" type="submit" className='bg-[#1570EF] sm:w-[720px] h-[48px] w-full rounded-lg text-white hover:bg-[#175CD3]'>Send Message</button>
+  {/* <button id="btn__submit" type="submit" className='bg-[#1570EF] sm:w-[720px] h-[48px] w-full rounded-lg text-white hover:bg-[#175CD3]'>Send Message</button> */}
   
+<button id="btn__submit" onClick={handleSubmit }  className='bg-[#1570EF] sm:w-[720px] h-[48px] w-full rounded-lg text-white hover:bg-[#175CD3]'>Send Message</button>
 </form>
-
     </div>
   )
 }
